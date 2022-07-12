@@ -122,3 +122,74 @@ print(a)
 a = [1, 2, 3]
 a.extend([4, 5])
 print(a)
+
+
+
+# 튜플
+# 리스트는 []로 둘러싸지만 튜플은 ()로 둘러싼다.
+# 튜플과 리스트의 가장 큰 차이는, 값을 변화시킬 수 있는가 없는가.
+# 리스트의 항목값은 변화가 가능하고 튜플의 항목값은 변화가 불가능하다. 튜플 요소값 삭제 시 오류
+t1 = (1, 2, 'a', 'b')
+print(t1[0])
+
+#딕셔너리 자료형
+dic = {'name':'pey', 'phone':'0119993323', 'birth' : '1118'}
+print(dic)
+a = {1:'a'}
+a[2] = 'b'
+print(a[2])
+print(a)
+dic = {"김연아":"피겨스케이팅", "류현진":"야구", "박지성":"축구","귀도":"파이썬"}
+print(dic['김연아'])
+print(dic.keys())
+#리스트만들기
+print(list(dic.keys()))
+print(dic.items())
+# print(dic.clear())
+print(dic.get('김연아'))
+
+#집합자료형
+s1 = set([1, 2, 3])
+print(s1)
+
+s2 = set("Hello")
+print(s2)
+
+#집합 자료형의 특징 : 중복허용 x, 순서가 없다,
+l1 = list(s1)
+print(l1)
+print(l1[0])
+
+s1 = set([1, 2, 3, 4, 5,6])
+s2 = set([4, 5, 6, 7, 8, 9])
+print(s1&s2)
+print(s1.intersection(s2))
+
+print(s1|s2)
+
+s1.add(10)
+print(s1)
+
+#값 여러개 추가하기
+s1.update([4, 5, 6])
+print(s1)
+
+s1.remove(2)
+print(s1)
+
+
+# 변수를 만드는 여러가지 방법
+a, b = ('python', 'life')
+print(a)
+
+del(a)
+
+a = [1, 2, 3]
+b = a
+a[1] = 4
+print(a)
+
+from copy import copy
+b = copy(a)
+print(b)
+
