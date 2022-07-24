@@ -286,4 +286,115 @@ while a < 10:
 
 test_list = ['one', 'two', 'three']
 
+for i in test_list:
+    print(i)
+
+marks = [90, 25, 67, 45, 80]
+num = 0
+for mark in marks:
+    num = num + 1
+    if mark >= 60:
+        print("%d번 학생은 합격입니다." %num)
+    else:
+        print("%d번 학생은 불합격입니다." %num)
+
+
+for mark in marks:
+    num = num+1
+    if mark < 60: continue
+    print("%d번 학생 축하합니다. 합격입니다." %num)
+
+a = range(10)
+print(a)
+
+sum = 0
+for i in range(1, 11):
+    sum = sum+i
+print(sum)
+
+for i in range(2, 10):
+    for j in range(1, 10):
+        print(i*j, end = " ")
+    print(' ')
+a = [1, 2, 3, 4]
+result = []
+
+for num in a:
+    result.append(num*3)
+
+print(result)
+
+def sum(a,b):
+    return a + b
+
+a = 3
+b = 4
+c = sum(a, b)
+print(c)
+
+def sum(a, b) :
+    result = a+b
+    return result
+
+a = sum(3, 4)
+print(a)
+
+def say():
+    return 'Hi'
+a = say()
+print(a)
+
+def sum(a, b):
+    print("%d, %d의 합은 %d입니다." % (a, b, a+b))
+
+sum(3, 4)
+
+def sum_many(*args):
+    sum = 0
+    for i in args:
+        sum = sum+i
+    return sum
+
+result = sum_many(1, 2, 3)
+print(result)
+
+
+def sum_mul(choice, *args):
+    if choice == "sum":
+        result = 0
+        for i in args:
+            result = result + i
+    elif choice == "mul":
+        result = 1
+        for i in args:
+            result = result * i
+    return result
+
+result = sum_mul('sum', 1, 2, 3, 4, 5)
+print(result)
+
+result = sum_mul('mul', 1, 2, 3, 4, 5)
+print(result)
+
+def say_myself(name, old, man = True):
+    print("나의 이름은 %s입니다." %name)
+    print("나이는 %d살입니다." %old)
+    if man:
+        print("남자입니다.")
+    else:
+        print("여자입니다.")
+
+say_myself("박응용", 27)
+say_myself("박응용", 27, True)
+
+a = 1
+def vartest(a):
+    a = a+1
+
+
+vartest(a)
+print(a)
+
+
+
 
